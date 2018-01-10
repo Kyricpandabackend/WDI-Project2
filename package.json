@@ -1,0 +1,44 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyricpandabackend/WDI-Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyricpandabackend/WDI-Project2/issues"
+  },
+  "homepage": "https://github.com/Kyricpandabackend/WDI-Project2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "expres": "0.0.5",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.0",
+    "node": "^9.3.0",
+    "nodemon": "^1.14.9",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {}
+}
