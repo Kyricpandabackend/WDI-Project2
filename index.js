@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
 res.send('historyBooks!');
 });
 
+app.get("/:name", (req, res) => {
+  res.send(`Welcome to ${req.params.name}`)
+})
+
 app.listen((4001), () => {
   console.log('listening on port 4001')
 })

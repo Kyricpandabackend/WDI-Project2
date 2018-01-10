@@ -1,0 +1,33 @@
+[
+  { 
+    "title": "De Anima",
+    "date": "350 B.C",
+    "genre": "philosophy"
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "date": "January 29, 1929",
+    "genre": "War"
+  },
+  
+  { 
+    "title": "Storm of Steel",
+    "date": "1920",
+    "genre": "War"
+  },
+  {
+    "title": "Storm of Steel",
+    "date": "1920",
+    "genre": "War"
+  },
+  { "title": "Republic",
+    "date": "380 BC",
+    "genre": "Political philosophy"
+  },
+  { 
+    "title": "Epic of Gilgamesh",
+    "date": "2100 BC",
+    "genre": "epic poem"
+
+  }
+]
