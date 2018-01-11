@@ -37,11 +37,4 @@ app.set('port', process.env.PORT || 4001)
 app.listen(app.get('port'), () => {
   console.log(`✅ PORT: ${app.get('port')} 🌟`)
 })
-
-
-
-
-
-
-
 //used resources from GA-WDI-WHenpresident and https://zellwk.com/blog/crud-express-mongodb/
