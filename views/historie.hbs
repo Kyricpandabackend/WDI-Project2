@@ -1,7 +1,13 @@
- <h2>Library</h2>
-{{#each librarys as |library index|}}
+
+<h2>{{librarys.length}} library</h2>
+{{#each library as |library index|}}
 <h3>
-{{!-- removed controllers route --}}
- <a href="/librarys/{{library.title}}">{{library.title}}</a>
+  <a href="/librarys/{{library.title}}">{{library.title}} blank {{library.date}}</a>
 </h3>
 {{/each}}
+
+<form action="/librarys" method="post">
+  <input type="text" name="library[title]" placeholder="title" />
+  <input type="number" name="library[date]" placeholder="date" />
+  <button type="submit">blank</button>
+</form>

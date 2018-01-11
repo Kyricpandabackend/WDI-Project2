@@ -1,5 +1,16 @@
 {{#if library}}
-<h1>{{<library.title> </library></h1>
+<h1>
+  {{library.title}}
+</h1>
+<h2>{{library.title}} Not in this library {{library.date}}!</h2>
+<form action="/library/{{library.title}}?_method=put" method="post">
+  <input type="text" name="library[title]" placeholder="title" value="{{library.title}}" />
+  <input type="number" name="library[date]" placeholder="date" value="{{library.date}}" />
+  <button type="submit">edits</button>
+</form>
+<form action="/library/{{library.title}}?_method=delete" method="post">
+  <button type="submit">remove</button>
+</form>
 {{else}}
-   <h2>Couldn't find resource page.</h2>
+<h2>Couldn't find resource page.</h2>
 {{/if}}
