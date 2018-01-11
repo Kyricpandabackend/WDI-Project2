@@ -1,7 +1,6 @@
-
-const mongoose = require('./schema')
-const seeds = require('./library')
-const Library = mongoose.model('Library')
+const Library= require('./schema')
+const seeds = require('./library.json')
+const mongoose = require('../controllers/librarys')
 
 mongoose.Promise = Promise
 

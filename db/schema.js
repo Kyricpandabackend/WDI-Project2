@@ -5,12 +5,12 @@
 
 const mongoose = require('./connections')
 
-const librarySchema = new mongoose.Schema({
+const LibrarySchema = new mongoose.Schema({
   title: String,
   date: String,
   genre: String
 })
 
-const Library = mongoose.model('Library', libarySchema)
+const Library = mongoose.model('Library', LibrarySchema)
 
 module.exports = Library 
