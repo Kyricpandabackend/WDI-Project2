@@ -4,6 +4,8 @@ var parser = require('body-parser')
 var hbs = require('express-handlebars')
 var app = express()
 var bodyParser = require('body-parser')
+var methodOverride = require('method-override')
+
 const libraryController = require('./controllers/librarys')
 //mongoose connects
 // mongoose.connect('mongodb://localhost/Historia-Bibliotheca')
@@ -18,6 +20,9 @@ app.engine('.hbs', hbs({
   defaultLayout: 'layout'
 }))
 
+app.use(methodOverride('_method'))
+app.use(bodyParser.urlencoded({ extended: true }))
+
 app.get('/', (req, res) => {
   res.render('app-welcome')
 })
@@ -27,6 +32,16 @@ app.use('/librarys', libraryController)
   //res.send(`Welcome to ${req.params.name}`)
 //})
 
-app.listen((4001), () => {
-  console.log('listening on port 4001')
+app.set('port', process.env.PORT || 4001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
 })
+
+
+
+
+
+
+
+//used resources from GA-WDI-WHenpresident and https://zellwk.com/blog/crud-express-mongodb/

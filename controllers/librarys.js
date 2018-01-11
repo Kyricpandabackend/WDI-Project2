@@ -15,7 +15,9 @@ Router.get('/:title', (req, res) => {
   Library
   .findOne({title: req.params.title})
   .then(library => {
-    res.render('present', {library: 'msg'})
+    console.log(library)
+    res.render('present', {msg: library})
+    console.log(library)
   }).catch(err => {
     console.log(err)
   })
